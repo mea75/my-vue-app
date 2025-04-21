@@ -9,9 +9,10 @@ git push
 # 第一次用（初始化 + 绑定远程仓库）：
 
 git init
-git remote add origin 远程仓库地址
 git add .
-git commit -m "项目初始化"
+git commit -m "项目初始化 首次提交"
+（git branch -M main）
+git remote add origin 远程仓库地址
 git push -u origin main
 
 
@@ -26,6 +27,9 @@ git commit -m "改了xxx"
 git push
 把刚才“提交”的内容上传到 GitHub
 如果之前已经连好远程仓库，它就直接上传
+
+git branch -M main
+把当前分支的名字强制改为 main。
 
 git push -u origin main（第一次上传用）
 意思：第一次上传的时候告诉 Git：我以后就往这个远程仓库推了
